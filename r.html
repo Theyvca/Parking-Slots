@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #8dd7c6;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.form-box{
+    justify-content: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: 2;
+}
+.register-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+.top span{
+    color: #359381;
+    font-size: 1.4em;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.top span a{
+    font-weight: bold;
+    color: #359381;
+    margin-left: 5px;
+    text-decoration: underline;
+}
+header{
+    color: #359381;
+    font-size: 4vh;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 30px;
+}
+.two-forms{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.input-field{
+    font-size: 18px;
+    color: black;
+    background: rgba(255,255,255,0.2);
+    width: 18vw;
+    height: 5vh;
+    padding: 2.2px 45px;
+    border-radius: 10px ;
+}
+
+::-webkit-input-placeholder{
+    color: #359381;
+}
+.input-box i{
+    position: relative;
+    top: -.2px;
+    right: 330px;
+    color: #359381;
+}
+.submit{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+    width: 18vw;
+    background: #359381;
+    border-radius:10px ;
+}
+.two-col{
+    display: flex;
+    justify-content: space-between;
+    color: #359381;
+    font-size: 1em;
+    margin-top: 10px;
+}
+.two-col .one{
+    display: flex;
+    gap: 5px;
+}
+.two label a{
+    text-decoration: underline;
+    color: #359381;
+}
+
+    </style>
+</head>
+<body>
+    <main>
+    <div class="form-box">
+        <div class="registration-container" id="register">
+            <div class="top">
+                <span> Have an acount ? <a href="l.html" onclick="login()">Login</a></span>
+                <header>Sign Up</header>
+                <div>
+                    <div class="two-forms">
+                        <div class="input-box">
+                            <input type="text"  class="input-field" placeholder="Username">
+                            <i class='bx bx-user'></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="email"  class="input-field" placeholder="Email">
+                            <i class="bx bx-envelope"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="password"  class="input-field" placeholder="password">
+                            <i class="bx bx-lock-alt"></i>
+                        </div>
+                        <div class="two-col">
+                            <div class="one">
+                                <input type="checkbox" id="register-check">
+                                <label for="register-check"> Remember Me</label>
+                            </div>
+                            <div class="two">
+                                <label><a href="#">Terms & Conditions</a></label>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <input type="submit"  class="submit" placeholder="Register">
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="index.js"></script>
+</body>
+</html>
